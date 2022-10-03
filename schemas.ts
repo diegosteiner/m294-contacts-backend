@@ -4,12 +4,12 @@ export const updateAddressSchema = {
 		type: 'object',
 		properties: {
 			id: { type: 'number' },
-			firstName: { type: 'number' },
-			lastName: { type: 'number' },
-			street: { type: 'number' },
-			zipCode: { type: 'number' },
-			city: { type: 'number' },
-			email: { type: 'number' }
+			firstName: { type: 'string' },
+			lastName: { type: 'string' },
+			street: { type: 'string' },
+			zipCode: { type: 'string' },
+			city: { type: 'string' },
+			email: { type: 'string' }
 		},
 		required: ['id']
 	}
@@ -19,14 +19,13 @@ export const addAddressSchema = {
 	body: {
 		type: 'object',
 		properties: {
-			firstName: { type: 'number' },
-			lastName: { type: 'number' },
-			street: { type: 'number' },
-			zipCode: { type: 'number' },
-			city: { type: 'number' },
-			email: { type: 'number' }
-		},
-		required: ['title']
+			firstName: { type: 'string' },
+			lastName: { type: 'string' },
+			street: { type: 'string' },
+			zipCode: { type: 'string' },
+			city: { type: 'string' },
+			email: { type: 'string' }
+		}
 	}
 }
 
